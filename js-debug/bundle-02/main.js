@@ -44,7 +44,7 @@ addNumbers();
 function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
-
+    //Valori booleani sbagliati
     let grantAccess = false;
 
     if (addresses.includes(userEmail)) {
@@ -65,7 +65,7 @@ function checkAccessImproved() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
     const userEmail = prompt('Inserisci il tuo indirizzo email');
-
+    //Valori booleani sbagliati
     let grantAccess = false;
 
     for (let i = 0; i < addresses.length; i++) {
