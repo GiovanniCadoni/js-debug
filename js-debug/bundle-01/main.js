@@ -18,7 +18,8 @@ for (let i = 0; i > 5; i++) {
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    //Sbagliato il simbolo
+    if (num % 2 === 0) {
         return num + 5;
     }
     return num;
@@ -27,7 +28,8 @@ function addIfEven(num) {
 
 // ESERCIZIO 3
 function loopToFive() {
-    for (let i = 0, i < 5, i++) {
+    //Sbagliati i punti e virgola
+    for (let i = 0; i < 5; i++) {
         console.log(i);
     }
 }
@@ -37,11 +39,13 @@ function loopToFive() {
 function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
-        if (numbers % 2 = 0); {
-            evenNumbers.push(i);
+    //Errori di scrittura vari e assegnazioni sbagliate
+    for (let i = 0; i <= numbers.length - 1; i++) {
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
         }
-        return evenNumbers;
     }
+    return evenNumbers;
 }
-displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+const result = displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+console.log(result);
